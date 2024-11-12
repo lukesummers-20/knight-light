@@ -1,3 +1,8 @@
+/*
+set up arrays
+
+*/
+
 int boardStart[8][8] = {
     {1, 1, 1, 1, 1, 1, 1, 1},
     {1, 1, 1, 1, 1, 1, 1, 1},
@@ -19,6 +24,45 @@ int lights[8][8] = {
     {0, 0, 0, 0, 0, 0, 0, 0},
     {0, 0, 0, 0, 0, 0, 0, 0},
 };
+
+struct pieceType{
+    int type;
+    int dir;
+};
+
+struct boardChange{
+    struct pieceType piece;
+    int r;
+    int c;
+    int up;
+};
+
+struct pieceType getPieceType(int r, int c, struct pieceType* boardPieces){
+    return *(boardPieces + (8 * r) + c);
+}
+
+struct boardChange initBoardChange(){
+    struct boardChange move;
+    move.piece.type = 99;
+    move.piece.dir = 99;
+    move.r = 99;
+    move.c = 99;
+    move.up = 99;
+}
+
+struct boardChange checkChange(int* row, int r, int* board, struct pieceType* boardPieces){
+    struct boardChange move = initBoardChange();
+    for (int i = 0; i < 8; i++){
+        if(*(row + i) != *(board + (8 * r) + i)){
+            move.up = (!(*(row + i)));
+            move.piece = getPieceType(r, i, boardPieces);
+            move.r = r;
+            move.c = i;
+            break;
+        } 
+    }
+    return move;
+}
 
 void lightMoves(int piece, int r, int c, int* board, int* lights, int dir){
     int i, j;
