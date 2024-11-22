@@ -10,40 +10,31 @@ update with row:
 
 
 
-struct pieceType{
-    int type;
-    int dir;
-};
+#include "chess.h"
 
-struct boardChange{
-    struct pieceType piece;
-    int r;
-    int c;
-    int up;
-};
 
-struct pieceType getPieceType(int r, int c, struct pieceType* boardPieces){
-    return *(boardPieces + (8 * r) + c);
+
+void initGame(struct piece* pieces, bool* board){
+    initPieces(pieces);
+    initBoard(board);
 }
 
 struct boardChange initBoardChange(){
     struct boardChange move;
-    move.piece.type = 99;
-    move.piece.dir = 99;
-    move.r = 99;
-    move.c = 99;
+    move.piece.type.num = 99;
+    move.piece.type.dir = 99;
+    move.piece.r = 99;
+    move.piece.c = 99;
     move.up = 99;
 }
 
-struct boardChange checkChange(int* row, int r, int* board, struct pieceType* boardPieces){
+struct boardChange checkChange(bool* row, int r, bool* board, struct piece* pieces){
     struct boardChange move = initBoardChange();
     for (int i = 0; i < 8; i++){
         if(*(row + i) != *(board + (8 * r) + i)){
             move.up = (!(*(row + i)));
-            move.piece = getPieceType(r, i, boardPieces);
-            move.r = r;
-            move.c = i;
-            break;
+            move.piece = getPiece(r, i, pieces);
+            return move;
         } 
     }
     return move;
