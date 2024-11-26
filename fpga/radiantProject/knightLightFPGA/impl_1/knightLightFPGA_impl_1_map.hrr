@@ -1,0 +1,21 @@
+---------------------------------------------------
+Report for cell knightLightTop
+   Instance path: knightLightTop
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         61        100.0
+                               LUTGATE	         35        100.0
+                                LUTCCU	         26        100.0
+                                 IOBUF	         11        100.0
+                                PFUREG	         42        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                           scanningFSM	          1        13.1
+---------------------------------------------------
+Report for cell scanningFSM
+   Instance path: knightLightTop/a1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          8        13.1
+                               LUTGATE	          8        22.9
+                                PFUREG	         16        38.1

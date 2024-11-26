@@ -1,0 +1,18 @@
+Copyright (c) 2002-2022 Lattice Semiconductor Corporation,  All rights reserved.
+
+Sun Nov 24 22:57:29 2024
+
+Command Line: par -w -n 1 -t 1 -s 1 -cores 1 -hsp m -exp parPathBased=ON \
+	knightLightFPGA_impl_1_map.udb knightLightFPGA_impl_1.udb 
+
+
+Level/       Number       Estimated       Timing       Estimated Worst    Timing          Run      Run
+Cost [udb]   Unrouted     Worst Slack     Score        Slack(hold)        Score(hold)     Time     Status
+----------   --------     -----------     ------       ---------------    -----------     ----     ------
+5_1   *      0            7.654           0            1.913              0               04       Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 4 secs 
+
+par done!

@@ -1,0 +1,23 @@
+----------------------------------------------------------------------
+Report for cell knightLightTop.TECH
+Register bits:  42 of 5280 (0.795%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        13          100.0
+                            FD1P3XZ        42          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         2          100.0
+                               LUT4        18          100.0
+                                 OB         9          100.0
+SUB MODULES
+                        scanningFSM         1
+                              TOTAL        86
+----------------------------------------------------------------------
+Report for cell scanningFSM.v1
+Instance Path : a1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3XZ        16           38.1
+                               LUT4         8           44.4
+                              TOTAL        24

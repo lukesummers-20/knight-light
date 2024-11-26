@@ -1,0 +1,34 @@
+
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m   -pwrprd -html -rpt "knightLightFPGA_impl_1.twr" "knightLightFPGA_impl_1.udb" 
+timing -sethld -v 10 -u 10 -endpoints 10 -nperend 1 -sp High-Performance_1.2V -hsp m -pwrprd -html -rpt knightLightFPGA_impl_1.twr knightLightFPGA_impl_1.udb -gui -msgset C:/Users/mdesomma/Documents/knight-light/fpga/radiantProject/knightLightFPGA/promote.xml
+Starting design reading...
+Loading device for application GENERIC from file 'itpa08.nph' in environment: C:/lscc/radiant/2024.1/ispfpga.
+Package Status:                     Preliminary    Version 1.5.
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Loading udb::Database ...
+Design:  knightLightTop
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:   High-Performance_1.2V
+
+
+
+Successfully loading udb, 0.03 seconds
+
+Initializing timer
+Starting design annotation....
+High-Performance_1.2V
+
+Starting full timing analysis...
+Performance Hardware Data Status:   Advanced       Version 1.0.
+Connections ignored  23  counted  219  covered  144
+Changing speed to m;   changing temperature to -40
+
+STA Runtime and Peak Memory Usage :
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 100 MB
+
+ 0.593797s wall, 0.484375s user + 0.062500s system = 0.546875s CPU (92.1%)
+

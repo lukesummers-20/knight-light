@@ -1,0 +1,208 @@
+
+                         Lattice Mapping Report File
+
+Design:  knightLightTop
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2024.1.0.34.2
+Mapped on: Sun Nov 24 22:57:25 2024
+
+Design Information
+------------------
+
+Command line:   map -pdc C:/Users/mdesomma/Documents/knight-light/fpga/radiantPr
+     oject/knightLightFPGA/pinOut.pdc -i knightLightFPGA_impl_1_syn.udb -o
+     knightLightFPGA_impl_1_map.udb -mp knightLightFPGA_impl_1.mrp -hierrpt -gui
+     -msgset C:/Users/mdesomma/Documents/knight-light/fpga/radiantProject/knight
+     LightFPGA/promote.xml
+
+Design Summary
+--------------
+
+   Number of slice registers:  42 out of  5280 (1%)
+   Number of I/O registers:      0 out of   117 (0%)
+   Number of LUT4s:            61 out of  5280 (1%)
+      Number of logic LUT4s:              19
+      Number of inserted feedthru LUT4s:  16
+      Number of ripple logic:             13 (26 LUT4s)
+   Number of IO sites used:   11 out of 39 (28%)
+      Number of IO sites used for general PIO: 11
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 11 out of 36 (31%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 11 out of 39 (28%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  1 out of 1 (100%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  2
+      Net int_osc: 14 loads, 14 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
+      Net toggle: 16 loads, 16 rising, 0 falling (Driver: Pin toggle_c/Q)
+   Number of Clock Enables:  1
+      Net VCC_net: 1 loads, 0 SLICEs
+   Number of LSRs:  2
+      Net n308: 13 loads, 13 SLICEs
+      Net n309: 16 loads, 16 SLICEs
+   Top 10 highest fanout non-clock nets:
+      Net n309: 16 loads
+      Net n308: 14 loads
+
+                                    Page 1
+
+
+
+
+
+Design Summary (cont)
+---------------------
+      Net VCC_net: 3 loads
+      Net counter[0]: 2 loads
+      Net counter[15]: 2 loads
+      Net counter[17]: 2 loads
+      Net counter[18]: 2 loads
+      Net n335: 2 loads
+      Net n337: 2 loads
+      Net n339: 2 loads
+
+
+
+
+
+   Number of warnings:  14
+   Number of criticals: 0
+   Number of errors:    0
+
+Design Errors/Criticals/Warnings
+--------------------------------
+
+WARNING <71003020> - map: Top module port 'c[6]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[5]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[4]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[3]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[2]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[1]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[0]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[6]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[5]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[4]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[3]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[2]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[1]' does not connect to anything.
+WARNING <71003020> - map: Top module port 'c[0]' does not connect to anything.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[7]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[6]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[5]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[4]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[3]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[2]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[1]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| r[0]                | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+                                    Page 2
+
+
+
+
+
+IO (PIO) Attributes (cont)
+--------------------------
+| led                 | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| resetInv            | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| c[7]                | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+Removed logic
+-------------
+
+Block i1 was optimized away.
+
+OSC Summary
+-----------
+
+OSC 1:                                 Pin/Node Value
+  OSC Instance Name:                            hf_osc
+  Power UP:                            NODE     VCC_net
+  Enable Signal:                       NODE     VCC_net
+  OSC Output:                          NODE     int_osc
+  DIV Setting:                                  00
+
+ASIC Components
+---------------
+
+Instance Name: hf_osc
+         Type: HFOSC
+
+Constraint Summary
+------------------
+
+   Total number of constraints: 12
+   Total number of constraints dropped: 0
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 63 MB
+Checksum -- map: 3523efdb887f35d75c59cb1ff8c27868cfd1e80
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 3
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor
+     Corporation,  All rights reserved.
