@@ -3,19 +3,28 @@ Report for cell knightLightTop
    Instance path: knightLightTop
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         61        100.0
-                               LUTGATE	         35        100.0
+                                  LUT4	        258        100.0
+                               LUTGATE	        232        100.0
                                 LUTCCU	         26        100.0
-                                 IOBUF	         11        100.0
-                                PFUREG	         42        100.0
+                                 IOBUF	         21        100.0
+                                PFUREG	        172        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                           scanningFSM	          1        13.1
+                              boardSPI	          1        24.4
+                           scanningFSM	          1        53.9
+---------------------------------------------------
+Report for cell boardSPI
+   Instance path: knightLightTop/a2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         63        24.4
+                               LUTGATE	         63        27.2
+                                PFUREG	         65        37.8
 ---------------------------------------------------
 Report for cell scanningFSM
    Instance path: knightLightTop/a1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          8        13.1
-                               LUTGATE	          8        22.9
-                                PFUREG	         16        38.1
+                                  LUT4	        139        53.9
+                               LUTGATE	        139        59.9
+                                PFUREG	         81        47.1

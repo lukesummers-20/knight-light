@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Nov 24 22:57:20 2024
+Tue Nov 26 16:02:40 2024
 
 
 Command Line:  C:\lscc\radiant\2024.1\ispfpga\bin\nt64\synthesis.exe -f knightLightFPGA_impl_1_lattice.synproj -logfile knightLightFPGA_impl_1_lattice.srp -gui -msgset C:/Users/mdesomma/Documents/knight-light/fpga/radiantProject/knightLightFPGA/promote.xml 
@@ -74,6 +74,7 @@ Mixed language design
 Verilog design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.v
 Verilog design file = C:/Users/mdesomma/Documents/knight-light/fpga/src/scanningFSM.sv
 Verilog design file = C:/Users/mdesomma/Documents/knight-light/fpga/src/knightLightTop.sv
+Verilog design file = C:/Users/mdesomma/Documents/knight-light/fpga/src/boardSPI.sv
 VHDL library = pmi
 VHDL design file = C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd
 The -r option is OFF. [ Remove LOC Properties is OFF. ]
@@ -126,6 +127,7 @@ INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ram_dq_be.v(45): 
 INFO <35901328> - synthesis: c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.v(17): analyzing included file c:/lscc/radiant/2024.1/ip/pmi/pmi_dsp.v. VERI-1328
 Analyzing Verilog file c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv. VERI-1482
 Analyzing Verilog file c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv. VERI-1482
+Analyzing Verilog file c:/users/mdesomma/documents/knight-light/fpga/src/boardspi.sv. VERI-1482
 Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd. VHDL-1481
 Analyzing VHDL file c:/lscc/radiant/2024.1/ip/pmi/pmi_ice40up.vhd
 
@@ -135,10 +137,11 @@ Top module language type = Verilog.
 Top module name (Verilog, mixed language): knightLightTop
 INFO <35901018> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv(6): compiling module knightLightTop. VERI-1018
 INFO <35901018> - synthesis: C:/lscc/radiant/2024.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC. VERI-1018
-WARNING <35901209> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv(19): expression size 32 truncated to fit in target size 25. VERI-1209
+WARNING <35901209> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv(21): expression size 32 truncated to fit in target size 25. VERI-1209
 INFO <35901018> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(6): compiling module scanningFSM. VERI-1018
-WARNING <35901209> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(120): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING <35901899> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(123): behavior inside always_comb block does not represent combinational logic. VERI-1899
+WARNING <35901209> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(129): expression size 32 truncated to fit in target size 1. VERI-1209
+WARNING <35901899> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(133): behavior inside always_comb block does not represent combinational logic. VERI-1899
+INFO <35901018> - synthesis: c:/users/mdesomma/documents/knight-light/fpga/src/boardspi.sv(6): compiling module boardSPI. VERI-1018
                                                          
 
 
@@ -235,47 +238,495 @@ original encoding -> new encoding (one-hot encoding)
 
 
 
-CRITICAL <35002028> - synthesis: I/O Port c[7] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[6] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[5] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[4] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[3] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[2] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[1] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port c[0] 's net has no driver and is unused.
-CRITICAL <35002028> - synthesis: I/O Port led 's net has no driver and is unused.
+Combinational loop due to latch found: 1
+
+	Instance c_c_0_I_0_3 
+
+	Net \a1/chessPieces[48] 
+
+Combinational loop due to latch found: 2
+
+	Instance c_c_0_I_0_4 
+
+	Net \a1/chessPieces[40] 
+
+Combinational loop due to latch found: 3
+
+	Instance c_c_0_I_0_5 
+
+	Net \a1/chessPieces[32] 
+
+Combinational loop due to latch found: 4
+
+	Instance c_c_0_I_0_6 
+
+	Net \a1/chessPieces[24] 
+
+Combinational loop due to latch found: 5
+
+	Instance c_c_0_I_0_7 
+
+	Net \a1/chessPieces[16] 
+
+Combinational loop due to latch found: 6
+
+	Instance c_c_0_I_0_8 
+
+	Net \a1/chessPieces[8] 
+
+Combinational loop due to latch found: 7
+
+	Instance c_c_0_I_0 
+
+	Net \a1/chessPieces[0] 
+
+Combinational loop due to latch found: 8
+
+	Instance c_c_0_I_0_2 
+
+	Net \a1/chessPieces[56] 
+
+Combinational loop due to latch found: 9
+
+	Instance \a1/ready_I_0 
+
+	Net \a1/ready 
+
+Combinational loop due to latch found: 10
+
+	Instance c_c_1_I_0_3 
+
+	Net \a1/chessPieces[49] 
+
+Combinational loop due to latch found: 11
+
+	Instance c_c_2_I_0_3 
+
+	Net \a1/chessPieces[50] 
+
+Combinational loop due to latch found: 12
+
+	Instance c_c_3_I_0_3 
+
+	Net \a1/chessPieces[51] 
+
+Combinational loop due to latch found: 13
+
+	Instance c_c_4_I_0_3 
+
+	Net \a1/chessPieces[52] 
+
+Combinational loop due to latch found: 14
+
+	Instance c_c_5_I_0_3 
+
+	Net \a1/chessPieces[53] 
+
+Combinational loop due to latch found: 15
+
+	Instance c_c_6_I_0_3 
+
+	Net \a1/chessPieces[54] 
+
+Combinational loop due to latch found: 16
+
+	Instance led_c_7_c_I_0_3 
+
+	Net \a1/chessPieces[55] 
+
+Combinational loop due to latch found: 17
+
+	Instance c_c_1_I_0_4 
+
+	Net \a1/chessPieces[41] 
+
+Combinational loop due to latch found: 18
+
+	Instance c_c_2_I_0_4 
+
+	Net \a1/chessPieces[42] 
+
+Combinational loop due to latch found: 19
+
+	Instance c_c_3_I_0_4 
+
+	Net \a1/chessPieces[43] 
+
+Combinational loop due to latch found: 20
+
+	Instance c_c_4_I_0_4 
+
+	Net \a1/chessPieces[44] 
+
+Combinational loop due to latch found: 21
+
+	Instance c_c_5_I_0_4 
+
+	Net \a1/chessPieces[45] 
+
+Combinational loop due to latch found: 22
+
+	Instance c_c_6_I_0_4 
+
+	Net \a1/chessPieces[46] 
+
+Combinational loop due to latch found: 23
+
+	Instance led_c_7_c_I_0_4 
+
+	Net \a1/chessPieces[47] 
+
+Combinational loop due to latch found: 24
+
+	Instance c_c_1_I_0_5 
+
+	Net \a1/chessPieces[33] 
+
+Combinational loop due to latch found: 25
+
+	Instance c_c_2_I_0_5 
+
+	Net \a1/chessPieces[34] 
+
+Combinational loop due to latch found: 26
+
+	Instance c_c_3_I_0_5 
+
+	Net \a1/chessPieces[35] 
+
+Combinational loop due to latch found: 27
+
+	Instance c_c_4_I_0_5 
+
+	Net \a1/chessPieces[36] 
+
+Combinational loop due to latch found: 28
+
+	Instance c_c_5_I_0_5 
+
+	Net \a1/chessPieces[37] 
+
+Combinational loop due to latch found: 29
+
+	Instance c_c_6_I_0_5 
+
+	Net \a1/chessPieces[38] 
+
+Combinational loop due to latch found: 30
+
+	Instance led_c_7_c_I_0_5 
+
+	Net \a1/chessPieces[39] 
+
+Combinational loop due to latch found: 31
+
+	Instance c_c_1_I_0_6 
+
+	Net \a1/chessPieces[25] 
+
+Combinational loop due to latch found: 32
+
+	Instance c_c_2_I_0_6 
+
+	Net \a1/chessPieces[26] 
+
+Combinational loop due to latch found: 33
+
+	Instance c_c_3_I_0_6 
+
+	Net \a1/chessPieces[27] 
+
+Combinational loop due to latch found: 34
+
+	Instance c_c_4_I_0_6 
+
+	Net \a1/chessPieces[28] 
+
+Combinational loop due to latch found: 35
+
+	Instance c_c_5_I_0_6 
+
+	Net \a1/chessPieces[29] 
+
+Combinational loop due to latch found: 36
+
+	Instance c_c_6_I_0_6 
+
+	Net \a1/chessPieces[30] 
+
+Combinational loop due to latch found: 37
+
+	Instance led_c_7_c_I_0_6 
+
+	Net \a1/chessPieces[31] 
+
+Combinational loop due to latch found: 38
+
+	Instance c_c_1_I_0_7 
+
+	Net \a1/chessPieces[17] 
+
+Combinational loop due to latch found: 39
+
+	Instance c_c_2_I_0_7 
+
+	Net \a1/chessPieces[18] 
+
+Combinational loop due to latch found: 40
+
+	Instance c_c_3_I_0_7 
+
+	Net \a1/chessPieces[19] 
+
+Combinational loop due to latch found: 41
+
+	Instance c_c_4_I_0_7 
+
+	Net \a1/chessPieces[20] 
+
+Combinational loop due to latch found: 42
+
+	Instance c_c_5_I_0_7 
+
+	Net \a1/chessPieces[21] 
+
+Combinational loop due to latch found: 43
+
+	Instance c_c_6_I_0_7 
+
+	Net \a1/chessPieces[22] 
+
+Combinational loop due to latch found: 44
+
+	Instance led_c_7_c_I_0_7 
+
+	Net \a1/chessPieces[23] 
+
+Combinational loop due to latch found: 45
+
+	Instance c_c_1_I_0_8 
+
+	Net \a1/chessPieces[9] 
+
+Combinational loop due to latch found: 46
+
+	Instance c_c_2_I_0_8 
+
+	Net \a1/chessPieces[10] 
+
+Combinational loop due to latch found: 47
+
+	Instance c_c_3_I_0_8 
+
+	Net \a1/chessPieces[11] 
+
+Combinational loop due to latch found: 48
+
+	Instance c_c_4_I_0_8 
+
+	Net \a1/chessPieces[12] 
+
+Combinational loop due to latch found: 49
+
+	Instance c_c_5_I_0_8 
+
+	Net \a1/chessPieces[13] 
+
+Combinational loop due to latch found: 50
+
+	Instance c_c_6_I_0_8 
+
+	Net \a1/chessPieces[14] 
+
+Combinational loop due to latch found: 51
+
+	Instance led_c_7_c_I_0_8 
+
+	Net \a1/chessPieces[15] 
+
+Combinational loop due to latch found: 52
+
+	Instance c_c_1_I_0 
+
+	Net \a1/chessPieces[1] 
+
+Combinational loop due to latch found: 53
+
+	Instance c_c_2_I_0 
+
+	Net \a1/chessPieces[2] 
+
+Combinational loop due to latch found: 54
+
+	Instance c_c_3_I_0 
+
+	Net \a1/chessPieces[3] 
+
+Combinational loop due to latch found: 55
+
+	Instance c_c_4_I_0 
+
+	Net \a1/chessPieces[4] 
+
+Combinational loop due to latch found: 56
+
+	Instance c_c_5_I_0 
+
+	Net \a1/chessPieces[5] 
+
+Combinational loop due to latch found: 57
+
+	Instance c_c_6_I_0 
+
+	Net \a1/chessPieces[6] 
+
+Combinational loop due to latch found: 58
+
+	Instance led_c_7_c_I_0 
+
+	Net \a1/chessPieces[7] 
+
+Combinational loop due to latch found: 59
+
+	Instance c_c_1_I_0_2 
+
+	Net \a1/chessPieces[57] 
+
+Combinational loop due to latch found: 60
+
+	Instance c_c_2_I_0_2 
+
+	Net \a1/chessPieces[58] 
+
+Combinational loop due to latch found: 61
+
+	Instance c_c_3_I_0_2 
+
+	Net \a1/chessPieces[59] 
+
+Combinational loop due to latch found: 62
+
+	Instance c_c_4_I_0_2 
+
+	Net \a1/chessPieces[60] 
+
+Combinational loop due to latch found: 63
+
+	Instance c_c_5_I_0_2 
+
+	Net \a1/chessPieces[61] 
+
+Combinational loop due to latch found: 64
+
+	Instance c_c_6_I_0_2 
+
+	Net \a1/chessPieces[62] 
+
+Combinational loop due to latch found: 65
+
+	Instance led_c_7_c_I_0_2 
+
+	Net \a1/chessPieces[63] 
+
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_0_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch \a1/ready_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_3 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_4 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_5 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_6 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_7 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_8 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_1_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_2_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_3_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_4_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_5_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch c_c_6_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+CRITICAL <35001783> - synthesis: Mapping latch led_c_7_c_I_0_2 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 
 ################### Begin Area Report (knightLightTop)######################
-Number of register bits => 42 of 5280 (0 % )
+Number of register bits => 172 of 5280 (3 % )
 CCU2 => 13
-FD1P3XZ => 42
+FD1P3XZ => 172
 HSOSC_CORE => 1
-IB => 2
-LUT4 => 18
-OB => 9
+IB => 10
+INV => 1
+LUT4 => 212
+OB => 11
 ################### End Area Report ##################
 Number of odd-length carry chains : 1
 Number of even-length carry chains : 0
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 2
+Number of Clocks: 3
   Net : int_osc, loads : 0
   Net : toggle, loads : 1
+  Net : sck_c, loads : 1
 Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : n308, loads : 26
-  Net : n309, loads : 16
-  Net : counter[24], loads : 2
-  Net : counter[23], loads : 2
-  Net : counter[22], loads : 2
-  Net : counter[21], loads : 2
-  Net : counter[20], loads : 2
-  Net : counter[19], loads : 2
-  Net : counter[18], loads : 2
-  Net : counter[17], loads : 2
+  Net : a2/wasdone, loads : 64
+  Net : a1/n330, loads : 64
+  Net : n362, loads : 26
+  Net : load_c, loads : 18
+  Net : a1/r_c_7_N_218, loads : 11
+  Net : a1/r_c_0_N_232, loads : 11
+  Net : a1/r_c_1_N_230, loads : 10
+  Net : a1/r_c_2_N_228, loads : 10
+  Net : a1/r_c_3_N_226, loads : 10
+  Net : a1/r_c_4_N_224, loads : 10
 ################### End Clock Report ##################
 
 ################### Begin Constraint Report ######################
@@ -295,6 +746,6 @@ Peak Memory Usage: 87 MB
 
 --------------------------------------------------------------
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: 90bb1280fb97381cc1e48051bfa805f8ddc12ca
+Checksum -- synthesis -- netlist: 7a7a4093f82273e0574765522b2d4407bf2dd1f0

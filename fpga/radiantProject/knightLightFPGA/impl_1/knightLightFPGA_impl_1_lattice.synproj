@@ -41,6 +41,7 @@
 -lib pmi -vhd "C:/lscc/radiant/2024.1/ip/pmi/pmi_iCE40UP.vhd"
 -sver "C:/Users/mdesomma/Documents/knight-light/fpga/src/scanningFSM.sv"
 "C:/Users/mdesomma/Documents/knight-light/fpga/src/knightLightTop.sv"
+"C:/Users/mdesomma/Documents/knight-light/fpga/src/boardSPI.sv"
 
 
 -path "C:/Users/mdesomma/Documents/knight-light/fpga/radiantProject/knightLightFPGA"

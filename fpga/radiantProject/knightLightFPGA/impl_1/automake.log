@@ -22,13 +22,13 @@ High-Performance_1.2V
 
 Starting full timing analysis...
 Performance Hardware Data Status:   Advanced       Version 1.0.
-Connections ignored  23  counted  219  covered  144
+Connections ignored  93  counted  946  covered  146
 Changing speed to m;   changing temperature to -40
 
 STA Runtime and Peak Memory Usage :
 Total CPU Time: 0 secs 
 Total REAL Time: 0 secs 
-Peak Memory Usage: 100 MB
+Peak Memory Usage: 103 MB
 
- 0.593797s wall, 0.484375s user + 0.062500s system = 0.546875s CPU (92.1%)
+ 0.702674s wall, 0.656250s user + 0.046875s system = 0.703125s CPU (100.1%)
 

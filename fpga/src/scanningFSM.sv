@@ -6,6 +6,7 @@
 module scanningFSM(
 	input logic clk, reset,
 	input logic [7:0] c,
+    output logic done,
 	output logic [7:0] r,
     output logic [63:0] chessLayout
 );
@@ -35,12 +36,18 @@ module scanningFSM(
 
     // FSM logic
 	always_ff @(posedge clk) begin  //putback reset if needed
-		if (reset) state <= S0;
+		if (reset) begin 
+            state <= S0;
+            done <= 0;
+        end
+		else if(ready == 1 && state == S0) begin
+            chessLayout <= chessPieces;
+            done <= 1;
+			state <= nextState;
+        end
 		else state <= nextState;
 
-        if(ready == 1 && state == S0) begin
-            chessLayout <= chessPieces;
-        end
+        
 	end
 
     assign r[0] = ((state == S0) || (state == S1));
@@ -57,10 +64,12 @@ module scanningFSM(
 			//row 0
 			S0: begin
                 nextState = S1;
+				//ready = 0;
             end
             S1: begin
                 nextState = S2;
                 chessPieces[63:56] = c;
+				ready = 0;
             end
 
 			S2: begin
@@ -118,6 +127,7 @@ module scanningFSM(
                 nextState = S0;
                 chessPieces[7:0] = c;
                 ready = ready + 1;
+				// maybe change ready in flip flop
             end
 			default: nextState = S0;
 		endcase

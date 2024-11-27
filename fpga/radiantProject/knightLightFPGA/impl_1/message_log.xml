@@ -357,11 +357,11 @@
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv(19): </Dynamic>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv(21): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>25</Dynamic>
             <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/knightlighttop.sv</Navigation>
-            <Navigation>19</Navigation>
+            <Navigation>21</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -374,18 +374,26 @@
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(120): </Dynamic>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(129): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv</Navigation>
-            <Navigation>120</Navigation>
+            <Navigation>129</Navigation>
         </Message>
         <Message>
             <ID>35901899</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(123): </Dynamic>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(133): </Dynamic>
             <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv</Navigation>
-            <Navigation>123</Navigation>
+            <Navigation>133</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>1</Severity>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/boardspi.sv(6): </Dynamic>
+            <Dynamic>boardSPI</Dynamic>
+            <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/boardspi.sv</Navigation>
+            <Navigation>6</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>
@@ -394,263 +402,336 @@
             <Dynamic>one-hot</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[7]</Dynamic>
+            <Dynamic>c_c_0_I_0_3</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[6]</Dynamic>
+            <Dynamic>c_c_0_I_0_4</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[5]</Dynamic>
+            <Dynamic>c_c_0_I_0_5</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[4]</Dynamic>
+            <Dynamic>c_c_0_I_0_6</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[3]</Dynamic>
+            <Dynamic>c_c_0_I_0_7</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[2]</Dynamic>
+            <Dynamic>c_c_0_I_0_8</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[1]</Dynamic>
+            <Dynamic>c_c_0_I_0</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>c[0]</Dynamic>
+            <Dynamic>c_c_0_I_0_2</Dynamic>
         </Message>
         <Message>
-            <ID>35002028</ID>
+            <ID>35001783</ID>
             <Severity>256</Severity>
-            <Dynamic>led</Dynamic>
+            <Dynamic>\a1/ready_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_7</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_8</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_1_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_2_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_3_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_4_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_5_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>c_c_6_I_0_2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001783</ID>
+            <Severity>256</Severity>
+            <Dynamic>led_c_7_c_I_0_2</Dynamic>
         </Message>
     </Task>
-    <Task name="PAR">
+    <Task name="Export">
         <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
-        </Message>
-    </Task>
-    <Task name="Map">
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>71003020</ID>
-            <Severity>16</Severity>
-            <Dynamic>c[0]</Dynamic>
+            <ID>1081100</ID>
+            <Severity>1</Severity>
+            <Dynamic>Bitstream authenticated.</Dynamic>
         </Message>
     </Task>
 </BaliMessageLog>
