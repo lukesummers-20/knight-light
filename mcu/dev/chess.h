@@ -24,5 +24,10 @@ struct boardChange{
 };
 
 void initGame(struct piece* pieces, bool* board);
+struct boardChange initBoardChange();
+struct boardChange checkChange(bool* row, int r, bool* board, struct piece* pieces, struct boardChange* lastUpdte);
+void lightMoves(struct piece* piece, bool* lights);
+void clearLights(bool* lights);
+int checkCheck(struct piece* pieces, int dir);
 
 #endif
