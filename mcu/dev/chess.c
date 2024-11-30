@@ -12,9 +12,34 @@ update with row:
 
 #include "chess.h"
 
+int checkMate(struct piece* pieces, int dir){
+    struct piece king, p;
+    int j, k;
+    if (dir == -1){
+        king = *(pieces + WKi);
+        j = 0;
+        while ((j < 28) & (king.nextMoves[j][0] != -1)){
+            for(int i = 16; i < 32; i++){
+                p = *(pieces + i);
+                k = 0;
+                while((k < 28) & (p.nextMoves[k][0] != -1)){
+                    if ((king.nextMoves[j][0] == p.nextMoves[k][0]) & (king.nextMoves[j][1] == p.nextMoves[k][1])){
+                        
+                    }
+                }
+            }
+            j++;
+        }
+    } else if (dir == 1){
+        king = *(pieces + BKi);
+    }
+    return 0;
+}
+
 int checkCheck(struct piece* pieces, int dir){
     struct piece king, p;
-    if (dir == 1){
+    //dir is dir of piece put down
+    if (dir == -1){
         king = *(pieces + WKi);
         for (int i = 16; i < 32; i++){
             int j = 0;
@@ -26,7 +51,7 @@ int checkCheck(struct piece* pieces, int dir){
                 j++;
             }
         }
-    } else if (dir == -1){
+    } else if (dir == 1){
         king = *(pieces + BKi);
         for (int i = 0; i < 16; i++){
             int j = 0;
