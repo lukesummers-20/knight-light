@@ -10,7 +10,7 @@
             <Options VerilogStandard="System Verilog" top_module="knightLightTop"/>
         </Source>
         <Source name="../../src/boardSPI.sv" type="Verilog" type_short="Verilog">
-            <Options VerilogStandard="System Verilog" top_module="boardSPI"/>
+            <Options VerilogStandard="System Verilog"/>
         </Source>
         <Source name="pinOut.pdc" type="Physical Constraints File" type_short="PDC">
             <Options/>

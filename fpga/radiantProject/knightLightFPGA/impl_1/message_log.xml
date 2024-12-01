@@ -374,18 +374,18 @@
         <Message>
             <ID>35901209</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(129): </Dynamic>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(52): </Dynamic>
             <Dynamic>32</Dynamic>
-            <Dynamic>1</Dynamic>
+            <Dynamic>8</Dynamic>
             <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv</Navigation>
-            <Navigation>129</Navigation>
+            <Navigation>52</Navigation>
         </Message>
         <Message>
             <ID>35901899</ID>
             <Severity>16</Severity>
-            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(133): </Dynamic>
+            <Dynamic>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv(137): </Dynamic>
             <Navigation>c:/users/mdesomma/documents/knight-light/fpga/src/scanningfsm.sv</Navigation>
-            <Navigation>133</Navigation>
+            <Navigation>137</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -440,11 +440,6 @@
             <ID>35001783</ID>
             <Severity>256</Severity>
             <Dynamic>c_c_0_I_0_2</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001783</ID>
-            <Severity>256</Severity>
-            <Dynamic>\a1/ready_I_0</Dynamic>
         </Message>
         <Message>
             <ID>35001783</ID>

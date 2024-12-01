@@ -18,7 +18,7 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>../../impl_1/knightLightFPGA_impl_1.bin</File>
-			<FileTime>11/23/24 20:23:09</FileTime>
+			<FileTime>11/30/24 20:39:38</FileTime>
 			<JedecChecksum>0x1D69</JedecChecksum>
 			<MemoryType>External SPI Flash Memory (SPI FLASH)</MemoryType>
 			<Operation>Erase,Program,Verify</Operation>

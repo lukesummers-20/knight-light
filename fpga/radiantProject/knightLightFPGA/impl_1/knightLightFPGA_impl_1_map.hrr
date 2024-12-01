@@ -3,28 +3,29 @@ Report for cell knightLightTop
    Instance path: knightLightTop
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        258        100.0
-                               LUTGATE	        232        100.0
-                                LUTCCU	         26        100.0
+                                  LUT4	        277        100.0
+                               LUTGATE	        241        100.0
+                                LUTCCU	         36        100.0
                                  IOBUF	         21        100.0
-                                PFUREG	        172        100.0
+                                PFUREG	        180        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                              boardSPI	          1        24.4
-                           scanningFSM	          1        53.9
+                              boardSPI	          1        22.7
+                           scanningFSM	          1        56.7
 ---------------------------------------------------
 Report for cell boardSPI
    Instance path: knightLightTop/a2
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         63        24.4
-                               LUTGATE	         63        27.2
-                                PFUREG	         65        37.8
+                                  LUT4	         63        22.7
+                               LUTGATE	         63        26.1
+                                PFUREG	         65        36.1
 ---------------------------------------------------
 Report for cell scanningFSM
    Instance path: knightLightTop/a1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        139        53.9
-                               LUTGATE	        139        59.9
-                                PFUREG	         81        47.1
+                                  LUT4	        157        56.7
+                               LUTGATE	        147        61.0
+                                LUTCCU	         10        27.8
+                                PFUREG	         89        49.4

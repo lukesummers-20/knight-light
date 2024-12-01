@@ -1,34 +1,35 @@
 ----------------------------------------------------------------------
 Report for cell knightLightTop.TECH
-Register bits:  172 of 5280 (3.258%)
+Register bits:  180 of 5280 (3.409%)
 I/O cells:      21
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        13          100.0
-                            FD1P3XZ       172          100.0
+                               CCU2        18          100.0
+                            FD1P3XZ       180          100.0
                          HSOSC_CORE         1          100.0
                                  IB        10          100.0
                                 INV         1          100.0
-                               LUT4       212          100.0
+                               LUT4       220          100.0
                                  OB        11          100.0
 SUB MODULES
                            boardSPI         1
                         scanningFSM         1
-                              TOTAL       422
+                              TOTAL       443
 ----------------------------------------------------------------------
 Report for cell boardSPI.v1
 Instance Path : a2
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ        65           37.8
+                            FD1P3XZ        65           36.1
                                 INV         1          100.0
-                               LUT4        63           29.7
+                               LUT4        63           28.6
                               TOTAL       129
 ----------------------------------------------------------------------
 Report for cell scanningFSM.v1
 Instance Path : a1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3XZ        81           47.1
-                               LUT4       139           65.6
-                              TOTAL       220
+                                FA2         5           27.8
+                            FD1P3XZ        89           49.4
+                               LUT4       147           66.8
+                              TOTAL       241
