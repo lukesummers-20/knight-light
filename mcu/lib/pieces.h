@@ -39,14 +39,14 @@
 #define BH 31
 
 void emptyNextMoves(struct piece* piece);
-struct piece initPawn(int r, int c, int dir);
-struct piece initBishop(int r, int c, int dir);
-struct piece initKnight(int r, int c, int dir);
-struct piece initRook(int r, int c, int dir);
-struct piece initQueen(int r, int c, int dir);
-struct piece initKing(int r, int c, int dir);
+void initPawn(struct piece* piece, int r, int c, int dir);
+void initBishop(struct piece* piece, int r, int c, int dir);
+void initKnight(struct piece* piece, int r, int c, int dir);
+void initRook(struct piece* piece, int r, int c, int dir);
+void initQueen(struct piece* piece, int r, int c, int dir);
+void initKing(struct piece* piece, int r, int c, int dir);
 void initPieces(struct piece* pieces);
-struct piece getPiece(int r, int c, struct piece* pieces);
+struct piece* getPiece(int r, int c, struct piece* pieces);
 void calcNextMoves(struct piece* piece, bool* board, struct piece* pieces);
 void updatePiece(struct piece* piece, int r, int c);
 int checkPromotion(struct piece* piece);
