@@ -3,7 +3,19 @@
 #ifndef PIECES_H
 #define PIECES_H
 
-#include "chess.h"
+#include <stdbool.h>
+
+struct pieceType{
+    int num;
+    int dir;
+};
+
+struct piece{
+    struct pieceType type;
+    int nextMoves[28][2];
+    int r;
+    int c;
+};
 
 #define WR1 0
 #define WKn1 1
@@ -50,5 +62,11 @@ struct piece* getPiece(int r, int c, struct piece* pieces);
 void calcNextMoves(struct piece* piece, bool* board, struct piece* pieces);
 void updatePiece(struct piece* piece, int r, int c);
 int checkPromotion(struct piece* piece);
+void calcPawnMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcBishopMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcKnightMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcRookMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcQueenMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcKingMoves(struct piece* piece, bool* board, struct piece* pieces);
 
 #endif

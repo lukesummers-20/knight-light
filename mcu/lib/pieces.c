@@ -124,17 +124,6 @@ struct piece* getPiece(int r, int c, struct piece* pieces){
     return pieces;
 }
 
-void calcNextMoves(struct piece* piece, bool* board, struct piece* pieces){
-    emptyNextMoves(piece);
-    switch(piece->type.num){
-        case 0: calcPawnMoves(piece, board, pieces);
-        case 1: calcBishopMoves(piece, board, pieces);
-        case 2: calcKnightMoves(piece, board, pieces);
-        case 3: calcRookMoves(piece, board, pieces);
-        case 4: calcQueenMoves(piece, board, pieces);
-        case 5: calcKingMoves(piece, board, pieces);
-    }
-}
 
 void calcPawnMoves(struct piece* piece, bool* board, struct piece* pieces){
     piece->nextMoves[0][0] = piece->r + piece->type.dir;
@@ -2267,5 +2256,17 @@ void calcKingMoves(struct piece* piece, bool* board, struct piece* pieces){
                 index = index + 1;
             }
         }
+    }
+}
+
+void calcNextMoves(struct piece* piece, bool* board, struct piece* pieces){
+    emptyNextMoves(piece);
+    switch(piece->type.num){
+        case 0: calcPawnMoves(piece, board, pieces);
+        case 1: calcBishopMoves(piece, board, pieces);
+        case 2: calcKnightMoves(piece, board, pieces);
+        case 3: calcRookMoves(piece, board, pieces);
+        case 4: calcQueenMoves(piece, board, pieces);
+        case 5: calcKingMoves(piece, board, pieces);
     }
 }
