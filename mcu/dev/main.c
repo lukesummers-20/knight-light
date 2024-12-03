@@ -45,6 +45,15 @@ int main(void) {
 
   initGame(&pieces, &board);
 
+
+  //for(int i = 0; i < 32; i++){
+  //  printf("%d ", i);
+  //  printf("col: %d ", (pieces + i)->c);
+  //  printf("row: %d ", (pieces + i)->r);
+  //  printf("type: %d ", (pieces + i)->type.num);
+  //  printf("\n");
+  //}
+
   bool lastUp = 0;
   char boardText[8];
 
@@ -71,7 +80,6 @@ int main(void) {
     for (int i = 0; i < 8; i++){
       for(int j = 0; j < 8; j++){
         row[j] = (boardText[i] & (1 << (7 - j))) ? 0 : 1;
-        //!((bool)(((uint8_t)boardText[i]) >> j) & ((uint8_t) 0x1));
       }
       checkChange(&row, i, &board, &pieces, &update, &lastUpdate);
       if (lastUp) {
@@ -100,6 +108,16 @@ int main(void) {
           clearLights(&lights);
           updateLightArray(update.piece, &lights);
           lightLights(&lights);
+          for(int i = 0; i < 64; i++){
+            if (*(lights + i)){
+              printf("1");
+            } else {
+              printf("0");
+            }
+            if (i % 8 == 7){
+              printf("\n");
+            }
+          }
         }
       }
     }

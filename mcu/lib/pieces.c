@@ -1,5 +1,6 @@
 #include "pieces.h"
 #include "chess.h"
+#include <stdio.h>
 
 int checkPromotion(struct piece* piece){
     if (piece->type.dir == 1){
@@ -24,7 +25,6 @@ void emptyNextMoves(struct piece* piece){
 }
 
 void initPawn(struct piece* piece, int r, int c, int dir){
-    struct piece pawn;
     piece->type.num = 0;
     piece->type.dir = dir;
     emptyNextMoves(piece);
@@ -65,7 +65,6 @@ void initRook(struct piece* piece, int r, int c, int dir){
 }
 
 void initQueen(struct piece* piece, int r, int c, int dir){
-    struct piece queen;
     piece->type.num = 4;
     piece->type.dir = dir;
     emptyNextMoves(piece);
@@ -74,7 +73,6 @@ void initQueen(struct piece* piece, int r, int c, int dir){
 }
 
 void initKing(struct piece* piece, int r, int c, int dir){
-    struct piece king;
     piece->type.num = 5;
     piece->type.dir = dir;
     emptyNextMoves(piece);
@@ -92,8 +90,8 @@ void initPieces(struct piece* pieces){
     initBishop(pieces + WB2, 0, 5, 1);
     initKnight(pieces + WKn2, 0, 6, 1);
     initRook(pieces + WR2, 0, 7, 1);
-    for (int i = 8; i < 16; i++){
-        initPawn(pieces + i, 1, i, 1);
+    for (int i = 0; i < 8; i++){
+        initPawn(pieces + 8 + i, 1, i, 1);
     }
     //black
     initRook(pieces + BR1, 7, 0, -1);
@@ -104,8 +102,8 @@ void initPieces(struct piece* pieces){
     initBishop(pieces + BB2, 7, 5, -1);
     initKnight(pieces + BKn2, 7, 6, -1);
     initRook(pieces + BR2, 7, 7, -1);
-    for (int i = 24; i < 32; i++){
-        initPawn(pieces + i, 6, i, -1);
+    for (int i = 0; i < 8; i++){
+        initPawn(pieces + 24 + i, 6, i, -1);
     }
 }
 

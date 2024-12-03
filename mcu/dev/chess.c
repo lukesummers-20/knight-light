@@ -74,6 +74,7 @@ void checkChange(bool* row, int r, bool* board, struct piece* pieces, struct boa
     initBoardChange(update);
     for (int i = 0; i < 8; i++){
         if(*(row + i) != *(board + (8 * r) + i)){
+            lastUpdate = update;
             update->up = (!(*(row + i)));
             if (update->up){
                 //cannot return structs, only ptr to struct
@@ -93,16 +94,7 @@ void updateLightArray(struct piece* piece, bool* lights){
     int i = 0;
     while ((i < 28) & (piece->nextMoves[i][0] != -1)){
         *(lights + (8 * piece->nextMoves[i][0]) + piece->nextMoves[i][1]) = 1;
-    }
-    for(int i = 0; i < 64; i++){
-      if (*(lights + i)){
-        printf("1");
-      } else {
-        printf("0");
-      }
-      if (i % 8 == 7){
-        printf("/n");
-      }
+        i++;
     }
 }
 
