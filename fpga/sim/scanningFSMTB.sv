@@ -1,9 +1,9 @@
 // scanningFSM-TB.sv
 // Max De Somma
 // mdesomma@g.hmc.edu
-// 9/7/24
+// 11/17/24
 
-// This is a test bench module that tests the segmentSwitcher correctly switched the correct transistor/display on and provided the correct seg output 
+// This is a test bench module that tests the chess scanning is correctly switched 
 module scanningFSMTB();
  // Set up test signals
 
