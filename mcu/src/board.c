@@ -1,6 +1,10 @@
+//Luke Summers lsummers@g.hmc.edu
+//source file for board logic functions
+
 #include "board.h"
 
-
+//function to initialize the boolean array representing the board to 
+//the starting state of a chess game
 void initBoard(bool* board){
     for (int i = 0; i < 8; i++){
         if ((i < 2) | (i > 5)){
@@ -13,10 +17,5 @@ void initBoard(bool* board){
             }
         } 
     }
-}
-
-void updateBoard(bool* board, int r, int c, int newR, int newC){
-    *(board + (8 * r) + c) = 0;
-    *(board + (8 * newR) + newC) = 1;
 }
 

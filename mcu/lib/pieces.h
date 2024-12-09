@@ -1,4 +1,5 @@
-
+//Luke Summers lsummers@g.hmc.edu
+//header file for chess piece constants and functions
 
 #ifndef PIECES_H
 #define PIECES_H
@@ -6,15 +7,23 @@
 #include <stdbool.h>
 
 struct pieceType{
+    //0 is pawn, 1 is bishop, 2 is knight, 3 is rook, 4 is queen, 5 is queen
     int num;
+    //1 for white and -1 for black
     int dir;
 };
 
 struct piece{
+    //type of piece
     struct pieceType type;
+    //array to hold next moves
     int nextMoves[28][2];
+    //current row
     int r;
+    //current column
     int c;
+    //1 if piece is protected, 0 if not
+    bool prot;
 };
 
 #define WR1 0
@@ -59,14 +68,12 @@ void initQueen(struct piece* piece, int r, int c, int dir);
 void initKing(struct piece* piece, int r, int c, int dir);
 void initPieces(struct piece* pieces);
 struct piece* getPiece(int r, int c, struct piece* pieces);
-void calcNextMoves(struct piece* piece, bool* board, struct piece* pieces);
-void updatePiece(struct piece* piece, int r, int c);
-int checkPromotion(struct piece* piece);
-void calcPawnMoves(struct piece* piece, bool* board, struct piece* pieces);
-void calcBishopMoves(struct piece* piece, bool* board, struct piece* pieces);
-void calcKnightMoves(struct piece* piece, bool* board, struct piece* pieces);
-void calcRookMoves(struct piece* piece, bool* board, struct piece* pieces);
-void calcQueenMoves(struct piece* piece, bool* board, struct piece* pieces);
-void calcKingMoves(struct piece* piece, bool* board, struct piece* pieces);
+void calcNextMoves(int num, bool* board, bool* attacked, bool* attacking, struct piece* pieces);
+void calcPawnMoves(struct piece* piece, bool* board, bool* attacked, struct piece* pieces);
+void calcBishopMoves(struct piece* piece, bool* board, bool* attacked, struct piece* pieces);
+void calcKnightMoves(struct piece* piece, bool* board, bool* attacked, struct piece* pieces);
+void calcRookMoves(struct piece* piece, bool* board, bool* attacked, struct piece* pieces);
+void calcQueenMoves(struct piece* piece, bool* board, bool* attacked, struct piece* pieces);
+void calcKingMoves(struct piece* piece, bool* board, bool* attacking, bool* attacked, struct piece* pieces);
 
 #endif

@@ -1,4 +1,5 @@
-
+//Luke Summers lsummers@g.hmc.edu
+// header file for chess board functions
 
 #ifndef BOARD_H
 #define BOARD_H
@@ -6,6 +7,5 @@
 #include <stdbool.h>
 
 void initBoard(bool* board);
-void updateBoard(bool* board, int r, int c, int newR, int newC);
 
 #endif

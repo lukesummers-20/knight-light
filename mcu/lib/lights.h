@@ -1,3 +1,6 @@
+//Luke Summers lsummers@g.hmc.edu
+//Header file for light function and constants
+
 #ifndef LIGHTS_H
 #define LIGHTS_H
 
